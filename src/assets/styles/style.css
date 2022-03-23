@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Comfortaa', cursive;
+  background-color: black;
+  color: white; }
+
+header {
+  border-bottom: 5px solid orange; }
+  header .container {
+    width: 95%;
+    margin: auto; }
+    header .container .nav {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 25px 0; }
+      @media screen and (max-width: 768px) {
+        header .container .nav {
+          justify-content: center; } }
+      header .container .nav h2 {
+        font-size: 2rem; }
+        @media screen and (max-width: 768px) {
+          header .container .nav h2 {
+            padding: 5px 0; } }
+        @media screen and (max-width: 480px) {
+          header .container .nav h2 {
+            text-align: center;
+            font-size: 1.5rem; } }
+      header .container .nav .search-box {
+        position: relative;
+        width: 350px; }
+        @media screen and (max-width: 480px) {
+          header .container .nav .search-box {
+            width: 80%;
+            margin: auto; } }
+        header .container .nav .search-box input {
+          box-sizing: border-box;
+          width: 100%;
+          font-size: 1rem;
+          padding: 8px;
+          border-radius: 25px;
+          outline: none;
+          transition: all 0.3s ease-in-out;
+          border: 1px solid lightgray; }
+          @media screen and (max-width: 480px) {
+            header .container .nav .search-box input {
+              font-size: .7rem; } }
+          header .container .nav .search-box input:focus {
+            box-shadow: 0 0 5px orange;
+            border: 1px solid orange; }
+        header .container .nav .search-box i {
+          color: black;
+          position: absolute;
+          top: 25%;
+          right: 4%;
+          transition: 1.5s; }
+          header .container .nav .search-box i:hover {
+            color: orange; }
+
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start; }
+
+.img {
+  width: 380px;
+  height: 200px;
+  margin-top: 15px;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 2px; }
+  @media screen and (max-width: 768px) {
+    .img {
+      width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
